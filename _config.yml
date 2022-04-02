@@ -5,3 +5,5 @@ plugins:
   - jekyll-gist
   - jekyll-coffeescript
   - jekyll-seo-tag
+
+theme: jekyll-theme-slate
