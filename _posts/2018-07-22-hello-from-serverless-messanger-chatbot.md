@@ -45,7 +45,7 @@ Then I create facebook app.
 I will copy the **AppId** and **AppSecret** which will be needed in the next steps:
 
 
-{% gist c08ee0f2726fd0e3909d %}
+{% gist 13d6ca793723d06f96350625ce0f2daf#file-facebook_appid_appsecret-png %}
 https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-facebook_appid_appsecret-png
 
 ### Messanger product
