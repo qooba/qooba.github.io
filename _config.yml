@@ -1,3 +1,7 @@
 url: 'https://qooba.github.io'
 name: qooba.net
 description: 'Coding, Technology, Machine Learning, Architecture'
+plugins:
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-seo-tag
