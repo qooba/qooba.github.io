@@ -14,3 +14,4 @@ defaults:
       layout: "default"
 
 #theme: jekyll-theme-slate
+theme: minimal-mistakes-jekyll
