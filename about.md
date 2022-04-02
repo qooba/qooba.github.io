@@ -2,8 +2,8 @@
 id: 11
 title: About
 date: '2018-07-22T23:44:46+02:00'
-author: admin1365
-layout: page
+author: qooba
+layout: default
 guid: 'http://qooba.net/?page_id=11'
 ---
 
