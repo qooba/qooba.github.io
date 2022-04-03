@@ -16,7 +16,7 @@ tags:
     - QuantumAI
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/08/resulta-7-1767629_1280.jpg" alt="calculator" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/08/resulta-7-1767629_1280.jpg" alt="calculator" width="900" />
 
 In this article I will show how we can prepare and perform calculations on quantum computers
 using [OpenFermion](https://quantumai.google/openfermion), [Cirq](https://quantumai.google/cirq) and [PySCF](https://pyscf.org/).

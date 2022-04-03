@@ -16,7 +16,7 @@ tags:
     - Tensorflow
 ---
 
-![DIV](https://qooba.net/wp-content/uploads/2020/07/salt.gif)
+![DIV]({{ site.relative_url }}wp-content/uploads/2020/07/salt.gif)
 
 Today I'm very happy to finally release my open source project [DeepMicroscopy](https://github.com/qooba/deepmicroscopy).
 In this project I have created the platform where you can capture the images from the microscope, annotate, train the [Tensorflow](http://tensorflow.org/) model and finally observe real time object detection. 

@@ -15,7 +15,7 @@ tags:
     - PyTorch
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2020/09/scissors-1024x682.jpg" alt="scissors" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2020/09/scissors-1024x682.jpg" alt="scissors" width="900" />
 
 
 Cutting photos background is one of the most tedious graphical task. In this article will show how to simplify it using neural networks. 

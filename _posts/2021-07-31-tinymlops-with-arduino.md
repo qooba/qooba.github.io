@@ -17,7 +17,7 @@ tags:
     - TinyMLOps
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/07/bee-in-the-approach-209145_1280-1024x729.jpg" alt="Bee" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/07/bee-in-the-approach-209145_1280-1024x729.jpg" alt="Bee" width="900" />
 
 In this article I will show how to build MLOps process TinyML on [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense).
 

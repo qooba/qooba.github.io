@@ -16,7 +16,7 @@ tags:
     - TinyML
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/07/ant-947402_1280-1024x682.jpg" alt="Ant" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/07/ant-947402_1280-1024x682.jpg" alt="Ant" width="900" />
 
 In this article I will show how to build Tensorflow Lite based jelly bears classifier using [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense).
 

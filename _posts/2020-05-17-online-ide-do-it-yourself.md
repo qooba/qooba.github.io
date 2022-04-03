@@ -14,7 +14,7 @@ tags:
     - vim
 ---
 
-![DIV](http://qooba.net/wp-content/uploads/2020/05/computer-1836330_640.png)
+![DIV]({{ site.relative_url }}wp-content/uploads/2020/05/computer-1836330_640.png)
 
 [Jupyter Notebook](https://jupyter.org/) is one of the most useful tool for data exploration, machine learning and fast prototyping. There are many plugins and projects which make it even more powerful:
 * [jupyterlab-git](https://github.com/jupyterlab/jupyterlab-git)

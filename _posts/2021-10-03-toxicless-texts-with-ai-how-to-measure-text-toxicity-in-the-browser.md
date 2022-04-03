@@ -18,7 +18,7 @@ tags:
     - WebAssembly
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/10/internet.jpg" alt="internet" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/10/internet.jpg" alt="internet" width="900" />
 
 In this article I will show how to measure comments toxicity using Machine Learning models.
 

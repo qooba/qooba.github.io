@@ -16,7 +16,7 @@ tags:
     - MLOps
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2020/10/gears-1024x682.jpg" alt="gears" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2020/10/gears-1024x682.jpg" alt="gears" width="900" />
 
 Machine Learning is one of the hottest area nowadays. New algorithms and models are widely used in commercial solutions thus the whole ML process as a software development and deployment process needs to be optimized. 
 

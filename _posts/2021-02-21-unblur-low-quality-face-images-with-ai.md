@@ -14,7 +14,7 @@ tags:
     - PyTorch
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/02/girl-1007407_1280-1024x678.jpg" alt="clay" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/02/girl-1007407_1280-1024x678.jpg" alt="clay" width="900" />
 
 In this article I will show how to improve the quality of blurred face images using 
 artificial intelligence. For this purpose I will use neural networks and [FastAI library](https://docs.fast.ai/) (ver. 1)

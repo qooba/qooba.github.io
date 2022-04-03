@@ -10,7 +10,7 @@ categories:
     - 'No classified'
 ---
 
-![CHATBOT](https://qooba.net/wp-content/uploads/2019/04/balloon-1014411_640.jpg)
+![CHATBOT]({{ site.relative_url }}wp-content/uploads/2019/04/balloon-1014411_640.jpg)
 
 I am pleased to hear that the first Polish banking chatbot with which you can make a transfer was awarded in a competition organized by a [**Gazeta Bankowa**](https://www.gb.pl/konkursy-technologiczne-rozstrzygniete-pnews-2000.html). With Milla you can talk in the [**Bank Millennium**](https://www.bankmillennium.pl/bankowosc-elektroniczna/bankowosc-mobilna/aplikacja-mobilna-klienci-indywidualni-biznes/milla-chatbot) mobile application. Currently, Milla can speak (text to speech), listen (automatic speak recognition) and understand what you write to her (intent detection with slot filling).
 

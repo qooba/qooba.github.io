@@ -16,7 +16,7 @@ tags:
     - Tensorflow
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/01/hot-air-balloons-1867279_1280-1024x678.jpg" alt="balloons" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/01/hot-air-balloons-1867279_1280-1024x678.jpg" alt="balloons" width="900" />
 
 The popularity of drones and the area of their application is becoming greater each year. 
 

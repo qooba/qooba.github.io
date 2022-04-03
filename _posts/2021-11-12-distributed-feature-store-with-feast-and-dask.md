@@ -17,7 +17,7 @@ tags:
     - sklearn
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/11/soap-bubbles-2417436_1280.jpg" alt="bubbles" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/11/soap-bubbles-2417436_1280.jpg" alt="bubbles" width="900" />
 
 In this article I will show how we combine Feast and Dask library to create distributed feature store.
 

@@ -17,7 +17,7 @@ tags:
     - rasa
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2020/08/phone-3594206_1280-1024x682.jpg" alt="old phone" width="730" height="486" />
+<img src="{{ site.relative_url }}wp-content/uploads/2020/08/phone-3594206_1280-1024x682.jpg" alt="old phone" width="730" height="486" />
 
 
 

@@ -7,7 +7,7 @@ layout: default
 guid: 'http://qooba.net/?page_id=11'
 ---
 
-<img class="size-full wp-image-23 alignleft" src="https://qooba.net/wp-content/uploads/2020/07/14150080.png" alt="" width="180" />Hi, my name is Kuba Sołtys, PhD.
+<img class="size-full wp-image-23 alignleft" src="{{ site.relative_url }}wp-content/uploads/2020/07/14150080.png" alt="" width="180" />Hi, my name is Kuba Sołtys, PhD.
 
 I'm [physicist](https://scholar.google.pl/citations?user=IebPbgsAAAAJ&amp;hl=pl), [programmer](https://github.com/qooba) and classical singer.
 

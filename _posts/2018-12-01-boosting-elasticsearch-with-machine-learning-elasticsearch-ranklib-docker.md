@@ -18,7 +18,7 @@ tags:
     - Ranklib
 ---
 
-![Telescope](http://qooba.net/wp-content/uploads/2018/11/telescope-2127704_640.jpg)
+![Telescope]({{ site.relative_url }}wp-content/uploads/2018/11/telescope-2127704_640.jpg)
 
 Elastic search is powerful search engine. Its distributed architecture give ability to build scalable full-text search solution. Additionally it provides comprehensive query language. 
 

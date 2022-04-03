@@ -15,7 +15,7 @@ tags:
     - MLOps
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/05/charyesang-687186_1280.jpg" alt="feast" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/05/charyesang-687186_1280.jpg" alt="feast" width="900" />
 
 In this article I will show how to prepare complete MLOPS solution based on the [Feast](https://feast.dev/) feature store and [MLflow](https://www.mlflow.org/) platform.
 

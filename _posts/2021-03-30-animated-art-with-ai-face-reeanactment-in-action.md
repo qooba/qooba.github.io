@@ -14,7 +14,7 @@ tags:
     - 'Machine learning'
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/03/AIFaceReenactment-start_ok2.gif" alt="faces" width="900" />
+<img src="{{ site.relative_url }}wp-content/uploads/2021/03/AIFaceReenactment-start_ok2.gif" alt="faces" width="900" />
 
 In this article I will show how to use artificial intelligence to add motion to the images and photos.
 
