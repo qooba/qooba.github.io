@@ -27,7 +27,6 @@ Before you will continue reading please watch short introduction:
     <iframe src="https://www.youtube.com/embed/o0Si6yRrozY" frameborder="0" allowfullscreen></iframe>
 </div>
 
-
 In the [last article (TinyML with Arduino)](https://qooba.net/2021/07/04/tinyml-with-arduino/) I have shown the example TinyML model which will classify 
 jelly bears using RGB sensor. 
 The next step, will be to build a process that will simplify, the model versions management, and the deployment.

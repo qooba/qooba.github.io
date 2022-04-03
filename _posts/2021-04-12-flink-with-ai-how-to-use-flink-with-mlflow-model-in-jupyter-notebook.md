@@ -20,7 +20,10 @@ tags:
 In this article I will show how to process streams with Apache Flink and MLflow model
 
 Before you will continue reading please watch short introduction: 
-https://www.youtube.com/watch?v=DJPv1zGXtkU
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/DJPv1zGXtkU" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 [Apache Flink](https://flink.apache.org/) allows for an efficient and scalable way of processing streams. It is a distributed processing engine which supports multiple sources like: [Kafka](https://kafka.apache.org/), [NiFi](https://nifi.apache.org/) and many others
