@@ -19,7 +19,7 @@ tags:
     - Wit
 ---
 
-![Chatbot](http://qooba.net/wp-content/uploads/2018/07/light-bulb-3104355_640.jpg)
+![Chatbot]({{ site.relative_url }}/wp-content/uploads/2018/07/light-bulb-3104355_640.jpg)
 
 **Messanger chatbots** are now becoming more and more popular. They can help us order pizzas, ask about the weather or check the news.
 
