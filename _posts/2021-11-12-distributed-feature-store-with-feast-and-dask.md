@@ -23,8 +23,7 @@ In this article I will show how we combine Feast and Dask library to create dist
 
 Before you will continue reading please watch short introduction: 
 
-![](https://www.youtube.com/watch?v=ES2XXhziB8s)
-
+<iframe width="420" height="315" src="http://www.youtube.com/embed/ES2XXhziB8s" frameborder="0" allowfullscreen></iframe>
 
 The Feature Store is very important component of the MLops process which helps to manage historical and online features. With the Feast we can for example read historical features from the parquet files and then materialize them to the Redis as a online store. 
 
