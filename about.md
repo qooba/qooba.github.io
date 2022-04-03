@@ -20,4 +20,5 @@ Currently I work as a [Solutions Architect](https://www.linkedin.com/in/qooba/) 
 I love coding, investigating and learning and I hope you will find many interesting things here.
 
 This license applies to all public [gists](https://gist.github.com/qooba) presented on this blog:
-https://gist.github.com/qooba/45d59e5d7cf72ba2381b8531e8805544
+
+{% gist 45d59e5d7cf72ba2381b8531e8805544 %}
