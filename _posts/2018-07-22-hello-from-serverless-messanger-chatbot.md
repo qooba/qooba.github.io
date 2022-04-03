@@ -44,15 +44,13 @@ Then I create facebook app.
 
 I will copy the **AppId** and **AppSecret** which will be needed in the next steps:
 
-
 {% gist 13d6ca793723d06f96350625ce0f2daf facebook_appid_appsecret.png %}
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-facebook_appid_appsecret-png
 
 ### Messanger product
 Then I will add the messanger product and setup it.
 I need to select page we already created and copy generated **access token**.
 
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-facebook_app_messanger-png
+{% gist 13d6ca793723d06f96350625ce0f2daf facebook_app_messanger.png %}
 
 &nbsp;
 
@@ -70,7 +68,8 @@ Now I will prepare my chatbot endpoint. I will setup it on the AWS lambda.
 
 For my chatbot I need to configure API Gateway.
 I have to choose security **open** otherwise I won't be able to call it from messanger
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-aws_lambda_apigateway-png
+
+{% gist 13d6ca793723d06f96350625ce0f2daf aws_lambda_apigateway.png %}
 
 &nbsp;
 
@@ -80,7 +79,7 @@ I also need to provide code which will handle the messanger webhook and send res
 I will simply put the code in the online editor.
 Let's take a look at the code:
 
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-chatbot-py
+{% gist 13d6ca793723d06f96350625ce0f2daf chatbot.py %}
 
 ### Configuration
 
@@ -89,10 +88,11 @@ Bellow I have to setup environment variables:
 **access_token** - value from the messanger webhook page setup
 **app_secret** - facebook app secret
 
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-aws_lambda_config-png
+{% gist 13d6ca793723d06f96350625ce0f2daf aws_lambda_config.png %}
 
 Now I'm ready to finish the webhook configuration:
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-facebook_app_events-png
+
+{% gist 13d6ca793723d06f96350625ce0f2daf facebook_app_events.png %}
 
 I use api gateway url ass **Callback URL** and **verify_token** I have just generated.
 
@@ -100,7 +100,7 @@ I use api gateway url ass **Callback URL** and **verify_token** I have just gene
 
 Messanger give easy way to add natural language undestanding functionality. To add this I simply configure it on messanger product setup page
 
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-facebook_app_nlp-png
+{% gist 13d6ca793723d06f96350625ce0f2daf facebook_app_nlp.png %}
 
 Here I can choose already trained models but I will go further and I will create custom model.
 Messanger will create the new [wit.ai](https://wit.ai) project for me.
@@ -109,10 +109,10 @@ On the wit.ai I can simply add some intents (like: **hungry**) and additional in
 
 The messanger/wit integration is very smooth let's analyze the webhook json I get when I put *I want to eat pizza*
 
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-webhook-json
+{% gist 13d6ca793723d06f96350625ce0f2daf webhook.json %}
 
 After wit integration the **nlp** object was added. Now I can get the recognized intent with some confidence (like: **hungry**) and additional entities (like: **dish**).
 
 Finally I can talk with my chatbot :)
 
-https://gist.github.com/qooba/13d6ca793723d06f96350625ce0f2daf#file-chatbot_hello-png
+{% gist 13d6ca793723d06f96350625ce0f2daf chatbot_hello.png %}
