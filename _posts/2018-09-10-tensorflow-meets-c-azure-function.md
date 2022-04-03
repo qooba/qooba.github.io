@@ -33,7 +33,7 @@ dotnet add package TensorFlowSharp -v 1.9.0
 
 Then create file **TensorflowImageClassification.cs**:
 
-https://gist.github.com/qooba/19063c20dc664df39511f7d8e6cc1605#file-TensorflowImageClassification-cs
+{% gist 19063c20dc664df39511f7d8e6cc1605 TensorflowImageClassification.cs %}
 
 Here I have defined the http entrypoint for the AzureFunction (**Run** method). The **q** query parameter is taken from the url and used as a url of the image which will be recognized. 
 
@@ -54,14 +54,14 @@ which will create the package for the function deployment.
 
 To deploy the code I will create the Azure Function (Consumption) with the http trigger. Additionally I will set the function entry point, the **function.json** will be defined as:
 
-https://gist.github.com/qooba/19063c20dc664df39511f7d8e6cc1605#file-function-json
+{% gist 19063c20dc664df39511f7d8e6cc1605 function.json %}
 
 The kudu will be used to deploy the already prepared package. Additionally I have to deploy the **libtensorflow.dll** from **/runtimes/win7-x64/native** (otherwise the Azure Functions won’t load it). The bin directory should look like:
 
-https://gist.github.com/qooba/19063c20dc664df39511f7d8e6cc1605#file-kudu-png
+{% gist 19063c20dc664df39511f7d8e6cc1605 kudu.png %}
 
 Finally I can test the azure function:
 
-https://gist.github.com/qooba/19063c20dc664df39511f7d8e6cc1605#file-azure_function-png
+{% gist 19063c20dc664df39511f7d8e6cc1605 azure_function.png %}
 
 The function recognize the image and returns the label with the highest probability.

@@ -29,8 +29,7 @@ First of all, I have to setup the databricks service where I can use [Microsoft 
 In this example I use the [movielens small dataset](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip) to create recommendations for the movies. After unzipping the package I use the **ratings.csv** file.
 On the main page of Databrick click **Upload Data** and put the file.
 
-https://gist.github.com/qooba/1765d58da9b99801c92e63ecbcec385d#file-uploadfile-png
-
+{% gist 1765d58da9b99801c92e63ecbcec385d uploadfile.png %}
 
 The file will be located on the DBFS (Databrick file system) and will have a path **/FileStore/tables/ratings.csv**. Now I can start model training.
 
@@ -40,7 +39,7 @@ The data is ready thus in the next step I can create the databricks notebook (**
 
 Using databricks I can prepare the recommendation in a few steps:
 
-https://gist.github.com/qooba/1765d58da9b99801c92e63ecbcec385d#file-recommendation-ipynb
+{% gist 1765d58da9b99801c92e63ecbcec385d recommendation.png %}
 
 First of all I read and parse the data, because the data file contains the header additionally I have to cut it. In the next step I split the data into training which will be used to train the model and testing part for model evaluation. 
 
