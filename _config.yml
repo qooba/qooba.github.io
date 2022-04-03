@@ -7,16 +7,16 @@ highlighter:      pygments
 #relative_permalinks: true
 
 # Setup
-name:             qooba.net
+name:             qooba.github.io
 title:            Qooba
 tagline:          'Qooba blog'
-description:      'A brazen two-column <a href="http://qooba.net" target="_blank">Qooba</a> theme that pairs a prominent sidebar with uncomplicated content.'
+description:      'A brazen two-column <a href="http://qooba.github.io" target="_blank">Qooba</a> theme that pairs a prominent sidebar with uncomplicated content.'
 url:              https://qooba.github.io
 baseurl:          /
 
 author:
   name:           'Qooba'
-  url:            https://qooba.net
+  url:            https://qooba.github.io/about
 
 paginate:         5
 
