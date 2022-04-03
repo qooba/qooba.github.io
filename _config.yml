@@ -1,6 +1,31 @@
-url: 'https://qooba.github.io'
-name: qooba.net
-description: 'Coding, Technology, Machine Learning, Architecture'
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+name:             qooba.net
+title:            Qooba
+tagline:          'Qooba blog'
+description:      'A brazen two-column <a href="http://qooba.net" target="_blank">Qooba</a> theme that pairs a prominent sidebar with uncomplicated content.'
+url:              https://qooba.github.io
+baseurl:          /
+
+author:
+  name:           'Qooba'
+  url:            https://qooba.net
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/qooba
+
 plugins:
   - jekyll-gist
   - jekyll-coffeescript
