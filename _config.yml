@@ -10,7 +10,7 @@ highlighter:      pygments
 name:             qooba.github.io
 title:            Qooba
 tagline:          'Qooba blog'
-description:      'A brazen two-column <a href="http://qooba.github.io" target="_blank">Qooba</a> theme that pairs a prominent sidebar with uncomplicated content.'
+description:      'Coding, Technology, Machine Learning, Architecture'
 url:              https://qooba.github.io
 baseurl:          /
 relative_url:     /
