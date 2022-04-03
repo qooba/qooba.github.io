@@ -29,7 +29,10 @@ In this article we will use Kubeflow and MLflow to build the isolated workspace 
 Currently we use Kubeflow platform in @BankMillennium to build AI solutions and conduct MLOPS process and this article is inspired by the experience gained while launching and using the platform. 
 
 Before you will continue reading please watch short introduction: 
-https://www.youtube.com/watch?v=6v_tucdemsQ
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/6v_tucdemsQ" frameborder="0" allowfullscreen></iframe>
+</div>
 
 # AI Platform
 

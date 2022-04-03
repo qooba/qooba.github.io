@@ -23,7 +23,9 @@ using [OpenFermion](https://quantumai.google/openfermion), [Cirq](https://quantu
 
 Before you will continue reading please watch short introduction: 
 
-https://www.youtube.com/watch?v=dR7GgJGafQQ
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/dR7GgJGafQQ" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Currently, there are many supercomputing centers, where we can run complicated simulations.
 However, there are still problems that are beyond the capabilities of classical computers,

@@ -21,8 +21,9 @@ In this article I will show how to prepare complete MLOPS solution based on the 
 
 Before you will continue reading please watch short introduction: 
 
-https://www.youtube.com/watch?v=CeYR0INmPhs
-
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/CeYR0INmPhs" frameborder="0" allowfullscreen></iframe>
+</div>
 
 The whole solution will be deployed on the kubernetes ([mlflow_feast.yaml](https://github.com/qooba/mlflow-feast/blob/main/mlflow_feast.yaml)).
 

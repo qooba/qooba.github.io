@@ -22,7 +22,9 @@ In this article I will show how we can extract music sources: bass, drums, vocal
 
 Before you will continue reading please watch short introduction: 
 
-https://www.youtube.com/watch?v=uzerSt4UkYc
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/uzerSt4UkYc" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Separation of individual instruments from arranged music is another area where machine learning 
 algorithms could help. [Demucs](https://github.com/facebookresearch/demucs) solves this problem using neural networks.

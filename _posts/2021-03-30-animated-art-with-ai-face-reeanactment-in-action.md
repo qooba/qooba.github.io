@@ -19,7 +19,10 @@ tags:
 In this article I will show how to use artificial intelligence to add motion to the images and photos.
 
 Before you will continue reading please watch short introduction: 
-https://www.youtube.com/watch?v=XBSqH6tKlT4
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/XBSqH6tKlT4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Face reenactment
 

@@ -25,7 +25,10 @@ The project is configured on the [Jetson Nano](https://www.nvidia.com/pl-pl/auto
 The project code is available on my github [https://github.com/qooba/deepmicroscopy](https://github.com/qooba/deepmicroscopy)
 
 Before you will continue reading please watch quick introduction:
-https://www.youtube.com/watch?v=1vUyGxu5qU8
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/1vUyGxu5qU8" frameborder="0" allowfullscreen></iframe>
+</div>
 
 # 1. Architecture
 

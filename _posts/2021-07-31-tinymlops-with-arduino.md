@@ -23,7 +23,9 @@ In this article I will show how to build MLOps process TinyML on [Arduino Nano 3
 
 Before you will continue reading please watch short introduction: 
 
-https://www.youtube.com/watch?v=o0Si6yRrozY
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/o0Si6yRrozY" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 In the [last article (TinyML with Arduino)](https://qooba.net/2021/07/04/tinyml-with-arduino/) I have shown the example TinyML model which will classify 

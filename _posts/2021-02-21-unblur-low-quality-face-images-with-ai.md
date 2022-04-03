@@ -23,7 +23,10 @@ The project code is available on my github: [https://github.com/qooba/aiunblur](
 You can also use ready docker image: [https://hub.docker.com/repository/docker/qooba/aiunblur](https://hub.docker.com/repository/docker/qooba/aiunblur)
 
 Before you will continue reading please watch short introduction: 
-https://www.youtube.com/watch?v=86tocbMxjR4
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/86tocbMxjR4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 I have based o lot on the [fastai course](https://www.youtube.com/watch?v=9spwoDYwW_I) thus I definitely recommend to go through it.
 

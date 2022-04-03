@@ -19,7 +19,10 @@ tags:
 In this article I will show how to use artificial intelligence to generate human faces.
 
 Before you will continue reading please watch short introduction: 
-https://www.youtube.com/watch?v=xJcSnm98ycM
+
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/xJcSnm98ycM" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Generative adversarial network
 

@@ -24,7 +24,9 @@ In this article I will show how to measure comments toxicity using Machine Learn
 
 Before you will continue reading please watch short introduction: 
 
-https://www.youtube.com/watch?v=AECV2qa0Kaw
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/AECV2qa0Kaw" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Hate, rude and toxic comments are common problem in the internet which affects many people. Today, we will prepare neural network, which detects comments toxicity, directly in the browser. The goal is to create solution which will detect toxicity in the realtime and warn the user during writing, which can discourage from writing toxic comments.
 

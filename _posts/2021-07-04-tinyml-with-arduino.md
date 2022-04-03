@@ -22,7 +22,9 @@ In this article I will show how to build Tensorflow Lite based jelly bears class
 
 Before you will continue reading please watch short introduction: 
 
-https://www.youtube.com/watch?v=dcjEx9qC0o4
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/dcjEx9qC0o4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Currently a machine learning solution can be deployed not only on very powerful machines containing GPU cards but also on a really small devices. Of course such a devices has a some limitation eg. memory etc. To deploy ML model we need to prepare it. The Tensorflow framework allows you to convert neural networks to Tensorflow Lite which can be installed on the edge devices eg. Arduino Nano. 
 

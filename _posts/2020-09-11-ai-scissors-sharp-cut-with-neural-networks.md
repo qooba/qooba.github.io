@@ -26,8 +26,10 @@ The project code is available on my github [https://github.com/qooba/aiscissors]
 You can also use ready docker image: [https://hub.docker.com/repository/docker/qooba/aiscissors](https://hub.docker.com/repository/docker/qooba/aiscissors)
 
 Before you will continue reading please watch quick introduction:
-https://www.youtube.com/watch?v=LM0tQReBgNs
 
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/LM0tQReBgNs" frameborder="0" allowfullscreen></iframe>
+</div>
 
 # Neural network
 

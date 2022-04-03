@@ -28,7 +28,9 @@ The project code is available on my github [https://github.com/qooba/heygoogle-w
 
 Before you will continue reading please watch quick introduction:
 
-https://www.youtube.com/watch?v=b6KboMN6LGQ
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/b6KboMN6LGQ" frameborder="0" allowfullscreen></iframe>
+</div>
 
 # Architecture  
 
