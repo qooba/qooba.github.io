@@ -16,7 +16,7 @@ tags:
     - Tensorflow
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/01/hot-air-balloons-1867279_1280-1024x678.jpg" alt="balloons" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/01/hot-air-balloons-1867279_1280-1024x678.jpg" alt="balloons" width="900" />
 
 The popularity of drones and the area of their application is becoming greater each year. 
 
@@ -32,7 +32,7 @@ https://youtu.be/g8oZ8ltRArY
 
 # Architecture
 
-<img src="https://qooba.net/wp-content/uploads/2021/01/AIDrone-1024x590.png" alt="architecture diagram" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/01/AIDrone-1024x590.png" alt="architecture diagram" width="900" />
 
 The application will use two network interfaces. 
 The first will be used by the python backend to connect the the Tello wifi to send the commands and capture video stream. In the backend layer I have used the [DJITelloPy](https://github.com/damiafuentes/DJITelloPy/) library which covers all required tello move commands and video stream capture.
@@ -44,7 +44,7 @@ I have used [nginx](https://www.nginx.com/) to serve the frontend application
 # Application
 
 
-<img src="https://qooba.net/wp-content/uploads/2021/01/AIDronGifsMove.gif" alt="drone controls" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/01/AIDronGifsMove.gif" alt="drone controls" width="900" />
 
 Using Web interface you can control the Tello movement where you can:
 * start video stream
@@ -63,7 +63,7 @@ Using Web interface you can control the Tello movement where you can:
 
 In addition using draw detection switch you can turn on/off the detection boxes on the captured video stream (however this introduces a delay in the video thus it is turned off by default). Additionally I send the list of detected classes through web sockets which are also displayed.
 
-<img src="https://qooba.net/wp-content/uploads/2021/01/AIDronGifsDetection.gif" alt="drone detection" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/01/AIDronGifsDetection.gif" alt="drone detection" width="900" />
 
 As mentioned before I have used the pretrained model thus It is good idea to train your own model to get better results for narrower and more specific class of objects. 
 

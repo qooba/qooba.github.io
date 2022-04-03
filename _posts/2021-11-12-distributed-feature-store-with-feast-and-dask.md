@@ -17,7 +17,7 @@ tags:
     - sklearn
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/11/soap-bubbles-2417436_1280.jpg" alt="bubbles" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/11/soap-bubbles-2417436_1280.jpg" alt="bubbles" width="900" />
 
 In this article I will show how we combine Feast and Dask library to create distributed feature store.
 
@@ -31,7 +31,7 @@ The Feature Store is very important component of the MLops process which helps t
 
 But what to do if historical data size exceeds our machine capabilities ?  The Dask library can help to solve this problem. Using Dask we can distribute the data and calculations across multiple machines. The Dask can be run on the single machine or on the cluster (k8s, yarn, cloud, HPC, SSH, manual setup). We can start with the single machine and then smoothly pass to the cluster if needed. Moreover thanks to the Dask we can read bunch of parquets using path pattern and evaluate distributed training using libraries like scikit-learn or XGBoost
 
-<img src="https://qooba.net/wp-content/uploads/2021/11/FeastDask2.04.png" alt="Feast with Dask" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/11/FeastDask2.04.png" alt="Feast with Dask" width="900" />
 
 I have prepared ready to use docker image thus you can simply reproduce all steps. 
 ```bash
@@ -79,7 +79,7 @@ from feast_schema import FeastSchema
 FeastSchema('.').show_schema()
 ```
 
-<img src="https://qooba.net/wp-content/uploads/2021/11/FeastSchema.png" alt="Feast schema" width="600" />
+<img src="{{ site.relative_url }}assets/images/2021/11/FeastSchema.png" alt="Feast schema" width="600" />
 
 ## Dask cluster setup
 
@@ -98,7 +98,7 @@ The Dask dashboard is exposed on port ```8787``` thus you can follow Dask metric
 http://localhost:8787/status
 ```
 
-<img src="https://qooba.net/wp-content/uploads/2021/11/DaskDashboard.png" alt="Dask dashboard" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/11/DaskDashboard.png" alt="Dask dashboard" width="900" />
 
 ## Fetching historical features
 

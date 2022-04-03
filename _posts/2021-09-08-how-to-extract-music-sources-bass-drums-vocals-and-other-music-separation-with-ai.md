@@ -16,7 +16,7 @@ tags:
     - PyTorch
 ---
 
-<img src="https://qooba.net/wp-content/uploads/2021/09/sound-4872773_1280.jpg" alt="calculator" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/09/sound-4872773_1280.jpg" alt="calculator" width="900" />
 
 In this article I will show how we can extract music sources: bass, drums, vocals and other accompaniments using neural networks.
 
@@ -32,7 +32,7 @@ On the encoder input we put the original track and after processing we get bass,
 The encoder, is connected to the decoder, through additional LSTM layer,
 as well as residual connections between subsequent layers.
 
-<img src="https://qooba.net/wp-content/uploads/2021/09/UNET_colors.png" alt="neural network architecture" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/09/UNET_colors.png" alt="neural network architecture" width="900" />
 
 Ok, we have neural network architecture but what about the training data ? 
 This is another difficulty which can be handled by the unlabeled data remixing pipeline.
@@ -45,7 +45,7 @@ According to this, we can calculate the loss (L1 loss), and use it du
 
 Additionally, we set different loss weights, for known track and the other. 
 
-<img src="https://qooba.net/wp-content/uploads/2021/09/AIMusicSeparation.00.jpeg" alt="training data" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/09/AIMusicSeparation.00.jpeg" alt="training data" width="900" />
 
 The whole UI is kept in the docker image thus you can simply try it:
 ```bash
@@ -56,7 +56,7 @@ docker run --name aiaudioseparation -it -p 8000:8000 -v $(pwd)/checkpoints:/root
 docker run --name aiaudioseparation --gpus all -it -p 8000:8000 -v $(pwd)/checkpoints:/root/.cache/torch/hub/checkpoints --rm qooba/aimusicseparation
 ```
 
-<img src="https://qooba.net/wp-content/uploads/2021/09/AIMusicSeparation.01.jpeg" alt="web UI" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/09/AIMusicSeparation.01.jpeg" alt="web UI" width="900" />
 
 
 

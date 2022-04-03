@@ -14,7 +14,7 @@ tags:
     - 'Machine learning'
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/03/AIFaceReenactment-start_ok2.gif" alt="faces" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/03/AIFaceReenactment-start_ok2.gif" alt="faces" width="900" />
 
 In this article I will show how to use artificial intelligence to add motion to the images and photos.
 
@@ -25,13 +25,13 @@ https://www.youtube.com/watch?v=XBSqH6tKlT4
 
 To bring photos to life we can use the face reenactment algorithm designed to transfer the facial movements in the video to another image. 
 
-<img src="https://qooba.net/wp-content/uploads/2021/03/AIFaceReenactment.00-1024x576.jpeg" alt="face reenactment diagram" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/03/AIFaceReenactment.00-1024x576.jpeg" alt="face reenactment diagram" width="900" />
 
 In this project I have used github implementation: [https://github.com/AliaksandrSiarohin/first-order-model](https://github.com/AliaksandrSiarohin/first-order-model). Where the extensive description of the neural network architecture can be found in this [paper](https://papers.nips.cc/paper/2019/hash/31c0b36aef265d9221af80872ceb62f9-Abstract.html). The solution contains of two parts: **motion module** and **generation module**.
 The **motion module** at the first stage extracts the key points from the source and target image. In fact in the solution we assume that reference image which we can to the source and target image exists and at the first stage the transformations from reference image to source ([latex]T_{S \leftarrow R} (p_k)[/latex]) and target ([latex]T_{T \leftarrow R} (p_k)[/latex]) image is calculated respectively. Then the first order Taylor expansions  [latex]\frac{d}{dp}T_{S \leftarrow R} (p)| {p=p_k}[/latex] and [latex]\frac{d}{dp}T_{T \leftarrow R} (p)| {p=p_k}[/latex] is used to calculate dense motion field. 
 The **generation module** use calculated dense motion field and source image to generate new image that will resemble target image. 
 
-<img src="https://qooba.net/wp-content/uploads/2021/03/AIFaceReenactment.01-1024x576.jpeg" alt="face reenactment diagram" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/03/AIFaceReenactment.01-1024x576.jpeg" alt="face reenactment diagram" width="900" />
 
 The whole solution is packed into docker image thus we can simply reproduce the results using command:
 ```bash

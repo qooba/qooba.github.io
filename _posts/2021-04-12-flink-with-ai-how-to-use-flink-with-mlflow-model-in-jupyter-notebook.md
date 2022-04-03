@@ -15,7 +15,7 @@ tags:
     - MLflowflow
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/04/animal-4501226_1920-1024x683.jpg" alt="squirrel" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/04/animal-4501226_1920-1024x683.jpg" alt="squirrel" width="900" />
 
 In this article I will show how to process streams with Apache Flink and MLflow model
 

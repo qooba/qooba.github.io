@@ -10,7 +10,7 @@ categories:
     - 'No classified'
 ---
 
-![MEETUP]({{ site.relative_url }}wp-content/uploads/2019/05/snail-2983235_640.jpg)
+![MEETUP]({{ site.relative_url }}assets/images/2019/05/snail-2983235_640.jpg)
 
 With big pleasure I would like to invite you to join [Azuronet - .NET & Azure Meetup #2](https://www.meetup.com/pl-PL/Azuronet-NET-Azure-Meetup/events/259674492/) in Warsaw, where I will talk (in polish) about [Milla](https://www.bankmillennium.pl/bankowosc-elektroniczna/bankowosc-mobilna/aplikacja-mobilna-klienci-indywidualni-biznes/milla-chatbot) project and give you some insights into the world of chatbots and intelligent assistants.
 

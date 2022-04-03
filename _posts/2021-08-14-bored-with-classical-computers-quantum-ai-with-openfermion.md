@@ -16,7 +16,7 @@ tags:
     - QuantumAI
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/08/resulta-7-1767629_1280.jpg" alt="calculator" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/08/resulta-7-1767629_1280.jpg" alt="calculator" width="900" />
 
 In this article I will show how we can prepare and perform calculations on quantum computers
 using [OpenFermion](https://quantumai.google/openfermion), [Cirq](https://quantumai.google/cirq) and [PySCF](https://pyscf.org/).
@@ -29,7 +29,7 @@ Currently, there are many supercomputing centers, where we can run complicated s
 However, there are still problems that are beyond the capabilities of classical computers,
 which can be addressed by quantum computers.
 
-<img src="https://qooba.net/wp-content/uploads/2021/08/QuantumAIOpenFermion.00-scaled.jpeg" alt="materials science" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/08/QuantumAIOpenFermion.00-scaled.jpeg" alt="materials science" width="900" />
 
 Quantum chemistry and materials science problems which that are described by the laws of 
 quantum mechanics can be mapped to the quantum computers and projected to qubits. 
@@ -38,7 +38,7 @@ quantum mechanics can be mapped to the quantum computers and projected to qubits
 
 Additionally we will use the PySCF package which will help to perform initial structure optimization (if you are interested in PySCF package I have shared the example DFT based band structure calculation of the single layer graphene structure [pyscf_graphene.ipynb](https://github.com/qooba/quantumai-openfermion/blob/main/notebooks/pyscf_graphene.ipynb)).
 
-<img src="https://qooba.net/wp-content/uploads/2021/08/QuantumAIOpenFermion.01-scaled.jpeg" alt="materials science" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/08/QuantumAIOpenFermion.01-scaled.jpeg" alt="materials science" width="900" />
 
 In our example we will investigate [latex]H_2[/latex] molecule for simplicity. We will use the PySCF package to find optimal bond length of the molecule. 
 
@@ -71,7 +71,7 @@ molecule = run_pyscf(molecule,
 ```
 
 
-<img src="https://qooba.net/wp-content/uploads/2021/08/QuantumAIOpenFermion.02-scaled.jpeg" alt="materials science" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/08/QuantumAIOpenFermion.02-scaled.jpeg" alt="materials science" width="900" />
 
 Now it is time to compile the molecule to the representation readable by the quantum computer
 using [OpenFermion](https://quantumai.google/openfermion) and [Cirq](https://quantumai.google/cirq) library.
@@ -83,6 +83,6 @@ Currently you can use several methods to achieve this:
 Using one of this methods we get optimized quantum circuit.
 In our case [the quantum cirquit](https://quantumai.google/cirq/circuits) for [latex]H_2[/latex] system will be represented by **4 qubits** and **operations** that act on them (**moment** is collection of **operations** that act at the same abstract time slice).
 
-<img src="https://qooba.net/wp-content/uploads/2021/08/QuantumAIOpenFermion.03-scaled.jpeg" alt="materials science" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/08/QuantumAIOpenFermion.03-scaled.jpeg" alt="materials science" width="900" />
 
 Finally we can use quantum circuit to run the calculations on [the cirq simulator](https://quantumai.google/cirq/simulation) or on [the real quantum computer](https://quantumai.google/quantum-computing-service).

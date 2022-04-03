@@ -18,7 +18,7 @@ tags:
     - Tensorflow
 ---
 
-![Meet]({{ site.relative_url }}wp-content/uploads/2018/10/meet_640.png)
+![Meet]({{ site.relative_url }}assets/images/2018/10/meet_640.png)
 
 Tensorflow meets C# Azure function and … . In this post I would like to show how to deploy tensorflow model with C# Azure function. I will use the [TensorflowSharp](https://github.com/migueldeicaza/TensorFlowSharp) the .NET bindings to the tensorflow library. The [InterceptionInterface](https://github.com/migueldeicaza/TensorFlowSharp/tree/master/Examples/ExampleInceptionInference) will be involved to create http endpoint which will recognize the images. 
 

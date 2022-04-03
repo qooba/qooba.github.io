@@ -17,7 +17,7 @@ tags:
     - 'Quantum teleportation'
 ---
 
-![DIV]({{ site.relative_url }}wp-content/uploads/2019/01/tool-2766835_640.jpg)
+![DIV]({{ site.relative_url }}assets/images/2019/01/tool-2766835_640.jpg)
 
 Quantum computing nowadays is the one of the hottest topics in the computer science world. 
 Recently IBM unveiled the [IBM Q System One](https://www.research.ibm.com/ibm-q/system-one/): a 20-qubit quantum computer which is touting as “the world’s first fully integrated universal quantum computing system designed for scientific and commercial use”.
@@ -119,7 +119,7 @@ docker-compose -f app/docker-compose.yml up
 ```
 
 Now we can run the [http://localhost:8020/](http://localhost:8020/) in the browser:
-![Q#](https://qooba.net/wp-content/uploads/2019/02/quantum_teleportation_1-1024x466.png)
+![Q#]({{ site.relative_url }}assets/images/2019/02/quantum_teleportation_1-1024x466.png)
 
 Then we can put the message in the **Laboratory 1**, click the **Teleport** button, trigger for the teleportation process which sends the message to the **Laboratory 2**. 
 

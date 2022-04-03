@@ -16,7 +16,7 @@ tags:
     - Spark
 ---
 
-![Brick]({{ site.relative_url }}wp-content/uploads/2018/08/wall-450106_640.jpg)
+![Brick]({{ site.relative_url }}assets/images/2018/08/wall-450106_640.jpg)
 
 Today I'd like to investigate the [Databricks](https://databricks.com/). I will show how it works and how to prepare simple recommendation system using collaborative filtering algorithm which can be used to help to match the product to the expectations and preferences of the user. Collaborative filtering algorithm is extremely useful when we know the relations (eg ratings) between products and the users but it is difficult to indicate the most significant features. 
 

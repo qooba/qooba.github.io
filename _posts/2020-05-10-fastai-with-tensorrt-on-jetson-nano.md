@@ -17,7 +17,7 @@ tags:
     - TensorRT
 ---
 
-![DIV]({{ site.relative_url }}wp-content/uploads/2020/05/cheetah-2859581_640.jpg)
+![DIV]({{ site.relative_url }}assets/images/2020/05/cheetah-2859581_640.jpg)
 
 IoT and AI are the hottest topics nowadays which can meet on [Jetson Nano device](https://www.nvidia.com/pl-pl/autonomous-machines/embedded-systems/jetson-nano/). 
 In this article I'd like to show how to use [FastAI](https://www.fast.ai/) library, which is built on the top of the [PyTorch](https://pytorch.org/) on Jetson Nano. Additionally I will show how to optimize the [FastAI](https://www.fast.ai/) model for the usage with [TensorRT](https://developer.nvidia.com/tensorrt).

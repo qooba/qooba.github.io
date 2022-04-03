@@ -14,7 +14,7 @@ tags:
     - vim
 ---
 
-![DIV]({{ site.relative_url }}wp-content/uploads/2020/05/computer-1836330_640.png)
+![DIV]({{ site.relative_url }}assets/images/2020/05/computer-1836330_640.png)
 
 [Jupyter Notebook](https://jupyter.org/) is one of the most useful tool for data exploration, machine learning and fast prototyping. There are many plugins and projects which make it even more powerful:
 * [jupyterlab-git](https://github.com/jupyterlab/jupyterlab-git)
@@ -44,7 +44,7 @@ docker run --name jupyter -d --rm -p 8888:8888 -v $(pwd)/jupyter:/root/.jupyter 
 In the **jupyter lab** start **terminal session**, run **bash** (it works better in bash) and then **vim**.
 The online IDE is ready:
 
-![DIV](http://qooba.net/wp-content/uploads/2020/05/jupyter_ide.gif)
+![DIV]({{ site.relative_url }}assets/images/2020/05/jupyter_ide.gif)
 
 # References
 

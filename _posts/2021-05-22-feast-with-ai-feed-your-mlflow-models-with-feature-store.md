@@ -15,7 +15,7 @@ tags:
     - MLOps
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/05/charyesang-687186_1280.jpg" alt="feast" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/05/charyesang-687186_1280.jpg" alt="feast" width="900" />
 
 In this article I will show how to prepare complete MLOPS solution based on the [Feast](https://feast.dev/) feature store and [MLflow](https://www.mlflow.org/) platform.
 
@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=CeYR0INmPhs
 
 The whole solution will be deployed on the kubernetes ([mlflow_feast.yaml](https://github.com/qooba/mlflow-feast/blob/main/mlflow_feast.yaml)).
 
-<img src="https://qooba.net/wp-content/uploads/2021/05/Feast_12.jpg" alt="component" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/05/Feast_12.jpg" alt="component" width="900" />
 
 We will use:
 * [Feast](https://feast.dev/) - as a Feature Store
@@ -36,11 +36,11 @@ We will use:
 * [Redis](https://redis.io/) - for a online features store
 
 
-<img src="https://qooba.net/wp-content/uploads/2021/05/Feast_doodly4.jpg" alt="propensity to buy" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/05/Feast_doodly4.jpg" alt="propensity to buy" width="900" />
 
 To better visualize the whole process we will use the Propensity to buy example where I base on [the Kaggle examples and data](https://www.kaggle.com/benpowis/customer-propensity-to-purchase).
 
-<img src="https://qooba.net/wp-content/uploads/2021/05/Feast_doodly9.jpg" alt="mlops" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/05/Feast_doodly9.jpg" alt="mlops" width="900" />
 
 We start in Jupyter Notebook where we prepare Feast feature store schema which is kept in S3. 
 

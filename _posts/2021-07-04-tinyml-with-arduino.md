@@ -16,7 +16,7 @@ tags:
     - TinyML
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/07/ant-947402_1280-1024x682.jpg" alt="Ant" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/ant-947402_1280-1024x682.jpg" alt="Ant" width="900" />
 
 In this article I will show how to build Tensorflow Lite based jelly bears classifier using [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense).
 
@@ -34,7 +34,7 @@ Currently a machine learning solution can be deployed not only on very powerful 
 
 Examples which I have used in this project can be found [here](https://create.arduino.cc/projecthub/gilbert-tanner/arduino-nano-33-ble-sense-overview-371c69).
 
-<img src="https://qooba.net/wp-content/uploads/2021/07/arduino_all-1024x441.png" alt="Arduino sensors" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/arduino_all-1024x441.png" alt="Arduino sensors" width="900" />
 
 To simplify device usage I have build [Arduino Lab](https://github.com/qooba/tinyml-arduino) project where you can test and investigate listed sensors directly on the web browser.
 
@@ -70,13 +70,13 @@ Here you have complete [Makefile](https://github.com/qooba/tinyml-arduino/blob/m
 ---
 
 You can start observations using **Watch** button.
-<img src="https://qooba.net/wp-content/uploads/2021/07/TinyMLArduino_pdm-1024x576.jpg" alt="Arduino pdm" width="900" />
-<img src="https://qooba.net/wp-content/uploads/2021/07/TinyMLArduino_temperature-1024x576.jpg" alt="Arduino temperature" width="900" />
-<img src="https://qooba.net/wp-content/uploads/2021/07/TinyMLArduino_rgb-1024x576.jpg" alt="Arduino rgb" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/TinyMLArduino_pdm-1024x576.jpg" alt="Arduino pdm" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/TinyMLArduino_temperature-1024x576.jpg" alt="Arduino temperature" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/TinyMLArduino_rgb-1024x576.jpg" alt="Arduino rgb" width="900" />
 
 Now we will build TinyML solution. 
 In the first step we will capture training data:
-<img src="https://qooba.net/wp-content/uploads/2021/07/TinyMLArduino_capture-1024x576.jpg" alt="Arduino capture" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/TinyMLArduino_capture-1024x576.jpg" alt="Arduino capture" width="900" />
 
 The training data will be saved in the csv format. You will need to repeat the proces for each class you will detect.
 
@@ -86,8 +86,8 @@ In the notebook we train the model using Tensorflow then convert it to Tensorflo
 
 Now we compile and upload **model.h** header file using drag and drop mechanism.
 
-<img src="https://qooba.net/wp-content/uploads/2021/07/TinyMLArduino_upload-1024x576.jpg" alt="Arduino upload" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/TinyMLArduino_upload-1024x576.jpg" alt="Arduino upload" width="900" />
 
 Finally we can classify the jelly bears by the color:
 
-<img src="https://qooba.net/wp-content/uploads/2021/07/TinyMLArduino_classify-1024x576.jpg" alt="Arduino classify" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/07/TinyMLArduino_classify-1024x576.jpg" alt="Arduino classify" width="900" />

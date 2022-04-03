@@ -18,7 +18,7 @@ tags:
     - WebAssembly
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/10/internet.jpg" alt="internet" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/10/internet.jpg" alt="internet" width="900" />
 
 In this article I will show how to measure comments toxicity using Machine Learning models.
 
@@ -31,7 +31,7 @@ Hate, rude and toxic comments are common problem in the internet which affects m
 To do this, we will train the [tensorflow lite model](https://www.tensorflow.org/lite), which will run in the browser using WebAssembly backend. The [WebAssembly (WASM)](https://webassembly.org/) allows running C, C++ or RUST code at native speed. Thanks to this, prediction performance will be better than running it using javascript tensorflowjs version.
 Moreover, we can serve the model, on the static page, with no additional backend servers required.
 
-<img src="https://qooba.net/wp-content/uploads/2021/10/AIToxicity.00.png" alt="web assembly" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity.00.png" alt="web assembly" width="900" />
 
 To train the model, we will use the [Kaggle Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) training data,
 which contains the labeled comments, with toxicity types:
@@ -42,7 +42,7 @@ which contains the labeled comments, with toxicity types:
 * insult
 * identity_hate
 
-<img src="https://qooba.net/wp-content/uploads/2021/10/AIToxicity.01.png" alt="data set" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity.01.png" alt="data set" width="900" />
 
 Our model, will only classify, if the text is toxic, or not. Thus we need to start with preprocessing training data. Then we will use the [tensorflow lite model maker library](https://www.tensorflow.org/lite/tutorials/model_maker_text_classification).
 We will also use the *Averaging Word Embedding* specification which will create words embeddings and dictionary mappings using training data thus we can train the model in the different languages. 
@@ -51,12 +51,12 @@ If we have small dataset we can use the pretrained embeddings. We can choose [*M
 In this case models will much more bigger ```25MB w/ quantization 100MB w/o quantization``` for 
 *MobileBERT* and ```300MB``` for *BERT-Base* (based on: https://www.tensorflow.org/lite/tutorials/model_maker_text_classification#choose_a_model_architecture_for_text_classifier)
 
-<img src="https://qooba.net/wp-content/uploads/2021/10/AIToxicity4_2.jpg" alt="train" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity4_2.jpg" alt="train" width="900" />
 
 Using simple model architecture (*Averaging Word Embedding*), we can achieve about nighty five percent accuracy, and small model size, appropriate 
 for the web browser, and web assembly. 
 
-<img src="https://qooba.net/wp-content/uploads/2021/10/AIToxicity5_1.jpg" alt="tensorflow lite" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity5_1.jpg" alt="tensorflow lite" width="900" />
 
 Now, let's prepare the non-toxic forum web application, where we can write the comments.
 When we write non-toxic comments, the model won't block it.
@@ -64,7 +64,7 @@ On the other hand, the toxic comments will be blocked, and the user�
 
 Of course, this is only client side validation, which can discourage users, from writing toxic comments.
 
-<img src="https://qooba.net/wp-content/uploads/2021/10/TextToxicity.gif" alt="web application" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/10/TextToxicity.gif" alt="web application" width="900" />
 
 To run the example simply clone git repository and run simple server to serve the static page:
 ``` bash 

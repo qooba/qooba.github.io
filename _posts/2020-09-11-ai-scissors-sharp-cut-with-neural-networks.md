@@ -15,7 +15,7 @@ tags:
     - PyTorch
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2020/09/scissors-1024x682.jpg" alt="scissors" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/09/scissors-1024x682.jpg" alt="scissors" width="900" />
 
 
 Cutting photos background is one of the most tedious graphical task. In this article will show how to simplify it using neural networks. 
@@ -38,7 +38,7 @@ stage ([torch.nn.functional.upsample](https://pytorch.org/docs/stable/nn.functio
 
 U[latex]^2[/latex]-Net network uses two-level nested U-structure where the main architecture is a U-Net like encoder-decoder and each stage contains residual U-block. Each residual U-block repeats donwsampling/upsampling procedures which are also connected using residual connections.  
 
-<img src="https://qooba.net/wp-content/uploads/2020/09/u2net.gif" alt="neural network architecture" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/09/u2net.gif" alt="neural network architecture" width="900" />
 
 
 Nested U-structure extracts and aggregates the features at each level and enables to capture local and global information from shallow and deep layers.
@@ -55,7 +55,7 @@ The neural network is wrapped with [rembg library](https://github.com/danielgati
 
 In the application you can drag and the drop the image and then compare image with and without background side by side. 
 
-<img src="https://qooba.net/wp-content/uploads/2020/09/app.gif" alt="web application" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/09/app.gif" alt="web application" width="900" />
 
 You can simply run the application using docker image:
 ```bash

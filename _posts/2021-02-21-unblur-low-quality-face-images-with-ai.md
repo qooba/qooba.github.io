@@ -14,7 +14,7 @@ tags:
     - PyTorch
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2021/02/girl-1007407_1280-1024x678.jpg" alt="clay" width="900" />
+<img src="{{ site.relative_url }}assets/images/2021/02/girl-1007407_1280-1024x678.jpg" alt="clay" width="900" />
 
 In this article I will show how to improve the quality of blurred face images using 
 artificial intelligence. For this purpose I will use neural networks and [FastAI library](https://docs.fast.ai/) (ver. 1)
@@ -87,7 +87,7 @@ data = get_data(bs,size)
 
 In this solution we will use a neural network with UNET architecture.
 
-<img src="https://qooba.net/wp-content/uploads/2021/02/UNet-1024x465.png" alt="neural network architecture" width="900" class="aligncenter" />
+<img src="{{ site.relative_url }}assets/images/2021/02/UNet-1024x465.png" alt="neural network architecture" width="900" class="aligncenter" />
 
 The UNET neural network contains two parts **Encoder** and **Decoder** which are used to reconstruct the face image.
 During the first stage **Encoder** fetch the input, extracts and aggregates the image features. At each stage the features maps are donwsampled.
@@ -150,13 +150,13 @@ learn = unet_learner(data, arch, wd=wd, loss_func=feat_loss, callback_fns=LossMe
 
 After training we can use the model to regenerate the images:
 
-<img src="https://qooba.net/wp-content/uploads/2021/02/Results-860x1024.png" alt="results" width="700" class="aligncenter" />
+<img src="{{ site.relative_url }}assets/images/2021/02/Results-860x1024.png" alt="results" width="700" class="aligncenter" />
 
 ## Application
 
 Finally we can export the model and create the drag and drop application which fix the face images in web application.
 
-<img src="https://qooba.net/wp-content/uploads/2021/02/unblur.gif" alt="results" width="900" class="aligncenter" />
+<img src="{{ site.relative_url }}assets/images/2021/02/unblur.gif" alt="results" width="900" class="aligncenter" />
 
 The whole solution is packed into docker images thus you can simply start it using commands:
 ```bash

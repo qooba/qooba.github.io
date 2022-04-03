@@ -16,7 +16,7 @@ tags:
     - Tensorflow
 ---
 
-![DIV]({{ site.relative_url }}wp-content/uploads/2020/07/salt.gif)
+![DIV]({{ site.relative_url }}assets/images/2020/07/salt.gif)
 
 Today I'm very happy to finally release my open source project [DeepMicroscopy](https://github.com/qooba/deepmicroscopy).
 In this project I have created the platform where you can capture the images from the microscope, annotate, train the [Tensorflow](http://tensorflow.org/) model and finally observe real time object detection. 
@@ -34,7 +34,7 @@ The solution requires three devices:
 * Inference server - [Jetson Nano](https://www.nvidia.com/pl-pl/autonomous-machines/embedded-systems/jetson-nano/)
 * Training server - PC equipped with GPU card e.g. [NVIDIA GTX 1050 Ti](https://www.nvidia.com/pl-pl/geforce/10-series/)
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/DeepMicrosocopy-1-1024x781.png" alt="" width="830" height="557" class="aligncenter size-large wp-image-373" />
+<img src="{{ site.relative_url }}assets/images/2020/07/DeepMicrosocopy-1-1024x781.png" alt="" width="830" height="557" class="aligncenter size-large wp-image-373" />
 
 The whole solution was built using docker images thus now I will describe components installed on each device.
 
@@ -59,19 +59,19 @@ The most of platform's functionality is installed on the Jetson Nano. Because th
 
 In the Deep Microscopy you can create multiple projects where you annotate and recognize different objects.
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/CreateProject.png" alt="" width="250"  class="aligncenter size-full wp-image-393" /> 
+<img src="{{ site.relative_url }}assets/images/2020/07/CreateProject.png" alt="" width="250"  class="aligncenter size-full wp-image-393" /> 
 
 You can create and switch projects in the top left menu. Each project data is kept in the separate bucket in the minio storage. 
 
 ## Images Capture
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/Jetson_Capture-1024x690.png" alt="" width="830" class="aligncenter size-large wp-image-377" />
+<img src="{{ site.relative_url }}assets/images/2020/07/Jetson_Capture-1024x690.png" alt="" width="830" class="aligncenter size-large wp-image-377" />
 
 When you open the **Capture** panel in the web application and click **Play** ▶ button the WebRTC socket between browser and backend is created (I have used the [aiortc](https://github.com/aiortc/aiortc) python library). To make it working in the Chrome browser we need two things:
 * use TLS for web application - the self signed certificate is already configured in the nginx
 * allow Camera to be used for the application - you have to set it in the browser
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/Jetson_Capture_1.png" alt="" width="309" height="431" class="aligncenter size-full wp-image-379" />
+<img src="{{ site.relative_url }}assets/images/2020/07/Jetson_Capture_1.png" alt="" width="309" height="431" class="aligncenter size-full wp-image-379" />
 
 Now we can stream the image from camera to the browser (I have used [OpenCV](https://opencv.org/) library to fetch the image from microscope through usb).
 
@@ -79,7 +79,7 @@ When we decide to capture specific frame and click **Plus** ✚ button the backe
 
 ## Annotation
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/Annotate-1024x552.png" alt="" width="830" class="aligncenter size-large wp-image-399" />
+<img src="{{ site.relative_url }}assets/images/2020/07/Annotate-1024x552.png" alt="" width="830" class="aligncenter size-large wp-image-399" />
 
 The annotation engine is based on the [Via Image Annotator](http://www.robots.ox.ac.uk/~vgg/software/via/). Here you can see all images you have captured for specific project. There are a lot of features eg. switching between images (left/right arrow), zoom in/out (+/-) and of course annotation tools with different shapes (currently the training algorithm expects the rectangles) and attributes (by default the **class** attribute is added which is also expected by the training algorithm).
 
@@ -91,13 +91,13 @@ When we finish image annotation we can start model training. As mentioned before
 
 ### Data package
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/DataPackage-1024x326.png" alt="" width="830" class="aligncenter size-large wp-image-412" />
+<img src="{{ site.relative_url }}assets/images/2020/07/DataPackage-1024x326.png" alt="" width="830" class="aligncenter size-large wp-image-412" />
 
 At the beginning we have to prepare data package (which contains captured images and our annotations) by clicking the **DATA** button. 
 
 ### Training server
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/Train-1024x604.png" alt="" width="830"  class="aligncenter size-large wp-image-415" />
+<img src="{{ site.relative_url }}assets/images/2020/07/Train-1024x604.png" alt="" width="830"  class="aligncenter size-large wp-image-415" />
 
 Then we drag and drop  **the data package** to the application placed on machine with higher compute capabilities.
  
@@ -108,19 +108,19 @@ When the training is finished the model is exported using [TensorRT](https://doc
 
 During and after training you can inspect all models using builtin tensorboard.
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/Tensorboard-1024x585.png" alt="" width="830" class="aligncenter size-large wp-image-417" />
+<img src="{{ site.relative_url }}assets/images/2020/07/Tensorboard-1024x585.png" alt="" width="830" class="aligncenter size-large wp-image-417" />
 
 The web application periodically check training state and when the training is finished we can download the model.
 
 ### Uploading model
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/UploadModel-1024x413.png" alt="" width="830" class="aligncenter size-large wp-image-419" />
+<img src="{{ site.relative_url }}assets/images/2020/07/UploadModel-1024x413.png" alt="" width="830" class="aligncenter size-large wp-image-419" />
 
 Finally we upload the TensorRT model back to the Jetson Nano device. The model is saved into selected project bucket thus you can use multiple models for each project. 
 
 ## Object detection
 
-<img src="https://qooba.net/wp-content/uploads/2020/07/ExecuteJetson-1024x739.png" alt="" width="830" class="aligncenter size-large wp-image-424" />
+<img src="{{ site.relative_url }}assets/images/2020/07/ExecuteJetson-1024x739.png" alt="" width="830" class="aligncenter size-large wp-image-424" />
 
 On the **Execute** panel we can choose model from the drop down list (where we have list of models uploaded for selected project) and load the model clicking **RUN** (typically it take same time to load the model). When we click **Play** ▶ button the application shows real time object detection. If we want to change the model we can click **CLEAR** and then choose and **RUN** another model. 
 

@@ -16,7 +16,7 @@ tags:
     - MLOps
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2020/10/gears-1024x682.jpg" alt="gears" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/10/gears-1024x682.jpg" alt="gears" width="900" />
 
 Machine Learning is one of the hottest area nowadays. New algorithms and models are widely used in commercial solutions thus the whole ML process as a software development and deployment process needs to be optimized. 
 
@@ -35,11 +35,11 @@ https://www.youtube.com/watch?v=6v_tucdemsQ
 
 The core of the platform will be setup using Kubeflow (**version 1.0.1**) on Kubernetes (**v1.17.0**). The Kuberenetes was setup using [Rancher RKE](https://rancher.com/docs/rke/latest/en/installation/) which simplifies the installation. 
 
-<img src="https://qooba.net/wp-content/uploads/2020/10/kubeflow_main-1024x552.png" alt="kubeflow main" width="900"  />
+<img src="{{ site.relative_url }}assets/images/2020/10/kubeflow_main-1024x552.png" alt="kubeflow main" width="900"  />
 
 The Kubeflow gives complete analytical multi-user/multi-teams environment with: authentication (dex), jupyter notebook workspace, pipelines, metadata store, artifact store, models deployment engines (kfserving, seldon).
 
-<img src="https://qooba.net/wp-content/uploads/2020/10/kubeflow_notebooks-1024x304.png" alt="kubeflow notebooks" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/10/kubeflow_notebooks-1024x304.png" alt="kubeflow notebooks" width="900" />
 
 ## Namespace isolation
 
@@ -390,7 +390,7 @@ spec:
 ```
 
 The MLflow repository can be accessed from web browser:
-<img src="https://qooba.net/wp-content/uploads/2020/10/mlflow_repository-1024x323.png" alt="mlflow repository" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/10/mlflow_repository-1024x323.png" alt="mlflow repository" width="900" />
 
 Additionally we have to mount [PersistentVolume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) **mlflow-pv-claim** to user notebook where we will store the training artifacts:
 ``` bash
@@ -527,7 +527,7 @@ MLflow model registry will keep the git commit hash used for the run which will 
 
 # MLOps
 
-<img src="https://qooba.net/wp-content/uploads/2020/10/ML_mlflow-1024x652.png" alt="mlops diagram" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/10/ML_mlflow-1024x652.png" alt="mlops diagram" width="900" />
 
 Now I'd like to propose the process of building and deploying ML models. 
 
@@ -892,7 +892,7 @@ spec:
 
 No it is time to [setup ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#from-ui) which will sync the Git deployments changes with Kubernetes configuration and automatically deploy newly promoted models.
 
-<img src="https://qooba.net/wp-content/uploads/2020/10/argocd-1024x257.png" alt="argocd" width="900" />
+<img src="{{ site.relative_url }}assets/images/2020/10/argocd-1024x257.png" alt="argocd" width="900" />
 
 To deploy MLflow models we will use docker image
 

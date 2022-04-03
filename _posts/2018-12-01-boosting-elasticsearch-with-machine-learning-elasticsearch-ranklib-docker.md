@@ -18,7 +18,7 @@ tags:
     - Ranklib
 ---
 
-![Telescope]({{ site.relative_url }}wp-content/uploads/2018/11/telescope-2127704_640.jpg)
+![Telescope]({{ site.relative_url }}assets/images/2018/11/telescope-2127704_640.jpg)
 
 Elastic search is powerful search engine. Its distributed architecture give ability to build scalable full-text search solution. Additionally it provides comprehensive query language. 
 
@@ -232,7 +232,7 @@ training-app:
 
 Clicking **Prepare Index** the data is taken from **ES_DATA** file and indexed in the elastic search. 
 
-![prepare index](http://qooba.net/wp-content/uploads/2018/11/Elastic_PrepareIndex-1024x505.png)
+![prepare index]({{ site.relative_url }}assets/images/2018/11/Elastic_PrepareIndex-1024x505.png)
 
 Additionally you can define:
 - **ES_HOST** - the elastic search url
@@ -261,7 +261,7 @@ First of all I have to prepare the file **label_list.json** which contains the l
 ```
 When the file is ready I can go to the second tab (**Step 2 Label**). 
 
-![label](http://qooba.net/wp-content/uploads/2018/11/Elastic_Label-1024x649.png)
+![label]({{ site.relative_url }}assets/images/2018/11/Elastic_Label-1024x649.png)
 
 For each query item the platform prepare the result candidates which have to be ranked from 0 to 4.
 
@@ -325,7 +325,7 @@ I can add more features without code modification, the list of features is defin
 
 Now I can go to the **Step 3 Train** tab and simply click the train button. 
 
-![train](http://qooba.net/wp-content/uploads/2018/11/Elastic_Train.png)
+![train]({{ site.relative_url }}assets/images/2018/11/Elastic_Train.png)
 
 At the first stage the training app takes all feature files and build the features set which is save in the elastic search (the **ES_FEATURE_SET_NAME** environment variable defines the name of this set).
 
@@ -369,7 +369,7 @@ Possible values:
 
 The default value is **ERR@10**
 
-![train](http://qooba.net/wp-content/uploads/2018/11/Elastic_TrainResult.png)
+![train]({{ site.relative_url }}assets/images/2018/11/Elastic_TrainResult.png)
 
 Finally we obtain the trained model which is deployed to the elastic search.
 The project can deploy multiple trained models and the deployed model name is defined by **ES_MODEL_NAME**.
@@ -378,7 +378,7 @@ The project can deploy multiple trained models and the deployed model name is de
 
 In the last step we can test trained and deployed model. 
 
-![test](http://qooba.net/wp-content/uploads/2018/11/Elastic_Test.png)
+![test]({{ site.relative_url }}assets/images/2018/11/Elastic_Test.png)
 
 We can choose the model using the **ES_MODEL_NAME** parameter. 
 

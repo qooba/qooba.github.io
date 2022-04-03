@@ -17,7 +17,7 @@ tags:
     - rasa
 ---
 
-<img src="{{ site.relative_url }}wp-content/uploads/2020/08/phone-3594206_1280-1024x682.jpg" alt="old phone" width="730" height="486" />
+<img src="{{ site.relative_url }}assets/images/2020/08/phone-3594206_1280-1024x682.jpg" alt="old phone" width="730" height="486" />
 
 
 
@@ -32,14 +32,14 @@ https://www.youtube.com/watch?v=b6KboMN6LGQ
 
 # Architecture  
 
-<img src="https://qooba.net/wp-content/uploads/2020/08/HeyGoogle-1024x301.png" alt="architecture diagram" width="900" class="aligncenter size-large wp-image-453" />
+<img src="{{ site.relative_url }}assets/images/2020/08/HeyGoogle-1024x301.png" alt="architecture diagram" width="900" class="aligncenter size-large wp-image-453" />
 
 The solution contains several components thus I will describe each of them.
 
 ##  Google actions
 
 To build google assistant we need to create and configure the google action project.
-<img src="https://qooba.net/wp-content/uploads/2020/08/google_actions_create-1024x582.png" alt="google actions create" width="900" class="aligncenter size-large wp-image-452" />
+<img src="{{ site.relative_url }}assets/images/2020/08/google_actions_create-1024x582.png" alt="google actions create" width="900" class="aligncenter size-large wp-image-452" />
 
 
 We will build our own nlu engine thus we will start with the blank project.
@@ -116,7 +116,7 @@ docker run --name redis -d --rm --network gitlab redis
 
 Minio is used as a [**Rasa Model Store**](https://rasa.com/docs/rasa/user-guide/cloud-storage/) (Rasa supports the S3 protocol). The [**GitLab pipeline worker**](https://docs.gitlab.com/ee/ci/pipelines/) after model training uploads the model package to [**Minio**](https://min.io/). Each language has separate bucket:
 
-<img src="https://qooba.net/wp-content/uploads/2020/08/minio-1024x409.png" alt="model store" width="900" class="aligncenter size-large wp-image-454" />
+<img src="{{ site.relative_url }}assets/images/2020/08/minio-1024x409.png" alt="model store" width="900" class="aligncenter size-large wp-image-454" />
 
 To run minio we will use command (for whole solution setup use [**run.sh**](https://github.com/qooba/heygoogle-with-rasa/blob/master/run.sh) where environment variables are set) :
 ```
@@ -155,7 +155,7 @@ git clone ssh://git@localhost:8022/root/heygoogle.git
 Before you can use the gitlab runner you have to configure at least one worker.
 First you get registration token (Settings -> CI/CD -> Runners):
 
-<img src="https://qooba.net/wp-content/uploads/2020/08/gitlab_runner-1024x537.png" alt="gitlab runners" width="900"  class="aligncenter size-large wp-image-450" />
+<img src="{{ site.relative_url }}assets/images/2020/08/gitlab_runner-1024x537.png" alt="gitlab runners" width="900"  class="aligncenter size-large wp-image-450" />
 
 and run once:
 ```
@@ -282,9 +282,9 @@ if __name__ == '__main__':
 ```
 
 Now after each change in the repository the gitlab starts the pipeline run:
-<img src="https://qooba.net/wp-content/uploads/2020/08/gitlab_pipeline-1024x510.png" alt="gitlab pipeline" width="900"  class="aligncenter size-large wp-image-449" />
+<img src="{{ site.relative_url }}assets/images/2020/08/gitlab_pipeline-1024x510.png" alt="gitlab pipeline" width="900"  class="aligncenter size-large wp-image-449" />
 <br/>
-<img src="https://qooba.net/wp-content/uploads/2020/08/gitlab_step-1024x563.png" alt="gitlab step" width="900" class="aligncenter size-large wp-image-451" />
+<img src="{{ site.relative_url }}assets/images/2020/08/gitlab_step-1024x563.png" alt="gitlab step" width="900" class="aligncenter size-large wp-image-451" />
 
 
 # Summary
