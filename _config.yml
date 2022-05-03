@@ -7,17 +7,17 @@ highlighter:      pygments
 #relative_permalinks: true
 
 # Setup
-name:             qooba.github.io
+name:             blog.qooba.net
 title:            Qooba
 tagline:          'Qooba blog'
 description:      'Coding, Technology, Machine Learning, Architecture'
-url:              https://qooba.github.io
+url:              https://blog.qooba.net
 baseurl:          /
 relative_url:     /
 
 author:
   name:           'Qooba'
-  url:            https://qooba.github.io/about
+  url:            https://blog.qooba.net/about
 
 paginate:         5
 
