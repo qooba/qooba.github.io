@@ -35,7 +35,8 @@ Moreover, we can serve the model, on the static page, with no additio
 
 <img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity.00.png" alt="web assembly" width="900" />
 
-To train the model, we will use the [Kaggle Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) training data,
+To train the model, we will use the [Kaggle Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) 
+training data,
 which contains the labeled comments, with toxicity types:
 * toxic
 * severe_toxic
@@ -51,7 +52,7 @@ We will also use the *Averaging Word Embedding* specification which will create 
 The *Averaging Word Embedding* specification based model will be small ```<1MB```. 
 If we have small dataset we can use the pretrained embeddings. We can choose [*MobileBERT*](https://arxiv.org/pdf/2004.02984.pdf) or [*BERT-Base*](https://arxiv.org/pdf/1810.04805.pdf) specification.
 In this case models will much more bigger ```25MB w/ quantization 100MB w/o quantization``` for 
-*MobileBERT* and ```300MB``` for *BERT-Base* (based on: https://www.tensorflow.org/lite/tutorials/model_maker_text_classification#choose_a_model_architecture_for_text_classifier)
+*MobileBERT* and ```300MB``` for *BERT-Base* (based on [tutorial](https://www.tensorflow.org/lite/tutorials/model_maker_text_classification#choose_a_model_architecture_for_text_classifier) )
 
 <img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity4_2.jpg" alt="train" width="900" />
 
@@ -64,7 +65,8 @@ Now, let's prepare the non-toxic forum web application, where we can 
 When we write non-toxic comments, the model won't block it.
 On the other hand, the toxic comments will be blocked, and the user warned.
 
-Of course, this is only client side validation, which can discourage users, from writing toxic comments.
+Of course, this is only client side validation, which can discourage users, from writing
+toxic comments.
 
 <img src="{{ site.relative_url }}assets/images/2021/10/TextToxicity.gif" alt="web application" width="900" />
 

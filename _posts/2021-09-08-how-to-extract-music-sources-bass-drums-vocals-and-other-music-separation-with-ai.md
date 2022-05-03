@@ -39,7 +39,8 @@ as well as residual connections between subsequent layers.
 Ok, we have neural network architecture but what about the training data ? 
 This is another difficulty which can be handled by the unlabeled data remixing pipeline.
 We start with another classifier, which can find the parts of music, which do not contain the specific instruments, for example drums.
-Then, we mix it with well known drums signal, and separate the tracks using the model. 
+Then, we mix it with well known drums signal, and separate the tracks
+using the model. 
 
 Now we can compare, the separation results, with known drums track and mixture of other instruments. 
 
