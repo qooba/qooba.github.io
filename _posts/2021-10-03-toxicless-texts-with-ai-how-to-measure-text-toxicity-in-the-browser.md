@@ -39,7 +39,8 @@ Moreover, we can serve the model, on the static page, with no additio
 
 <img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity.00.png" alt="web assembly" width="900" />
 
-To train the model, we will use the [Kaggle Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) 
+To train the model, we will use 
+the [Kaggle Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) 
 training data,
 which contains the labeled comments, with toxicity types:
 * toxic
