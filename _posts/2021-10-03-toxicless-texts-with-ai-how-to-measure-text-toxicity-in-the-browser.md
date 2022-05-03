@@ -28,7 +28,11 @@ Before you will continue reading please watch short introduction:
     <iframe src="https://www.youtube.com/embed/AECV2qa0Kaw" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Hate, rude and toxic comments are common problem in the internet which affects many people. Today, we will prepare neural network, which detects comments toxicity, directly in the browser. The goal is to create solution which will detect toxicity in the realtime and warn the user during writing, which can discourage from writing toxic comments.
+Hate, rude and toxic comments are common problem in the internet which affects many people. 
+Today, we will prepare neural network, which detects comments toxicity, 
+directly in the browser. 
+The goal is to create solution which will detect toxicity in the realtime and warn the user during writing, 
+which can discourage from writing toxic comments.
 
 To do this, we will train the [tensorflow lite model](https://www.tensorflow.org/lite), which will run in the browser using WebAssembly backend. The [WebAssembly (WASM)](https://webassembly.org/) allows running C, C++ or RUST code at native speed. Thanks to this, prediction performance will be better than running it using javascript tensorflowjs version.
 Moreover, we can serve the model, on the static page, with no additional backend servers required.
