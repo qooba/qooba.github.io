@@ -34,7 +34,10 @@ directly in the browser.
 The goal is to create solution which will detect toxicity in the realtime and warn the user during writing, 
 which can discourage from writing toxic comments.
 
-To do this, we will train the [tensorflow lite model](https://www.tensorflow.org/lite), which will run in the browser using WebAssembly backend. The [WebAssembly (WASM)](https://webassembly.org/) allows running C, C++ or RUST code at native speed. Thanks to this, prediction performance will be better than running it using javascript tensorflowjs version.
+To do this, we will train the [tensorflow lite model](https://www.tensorflow.org/lite), 
+which will run in the browser using WebAssembly backend. 
+The [WebAssembly (WASM)](https://webassembly.org/) allows running C, C++ or RUST code at native speed. 
+Thanks to this, prediction performance will be better than running it using javascript tensorflowjs version.
 Moreover, we can serve the model, on the static page, with no additional backend servers required.
 
 <img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity.00.png" alt="web assembly" width="900" />
@@ -68,7 +71,9 @@ for the web browser, and web assembly. 
 
 Now, let's prepare the non-toxic forum web application, where we can write the comments.
 When we write non-toxic comments, the model won't block it.
-On the other hand, the toxic comments will be blocked, and the user warned.
+
+On the other hand, the toxic comments will be blocked, 
+and the user warned.
 
 Of course, this is only client side validation, which can discourage users, from writing
 toxic comments.

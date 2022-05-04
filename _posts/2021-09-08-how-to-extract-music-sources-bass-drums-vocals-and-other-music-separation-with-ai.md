@@ -31,14 +31,18 @@ algorithms could help. [Demucs](https://github.com/facebookresearch/demucs) solv
 
 The trained model ([https://arxiv.org/pdf/1909.01174v1.pdf](https://arxiv.org/pdf/1909.01174v1.pdf)) use U-NET architecture which contains two parts encoder and decoder. 
 On the encoder input we put the original track and after processing we get bass, drums, vocals and other accompaniments at the decoder output. 
-The encoder, is connected to the decoder, through additional LSTM layer,
+
+The encoder, is connected to the decoder, 
+through additional LSTM layer,
 as well as residual connections between subsequent layers.
 
 <img src="{{ site.relative_url }}assets/images/2021/09/UNET_colors.png" alt="neural network architecture" width="900" />
 
 Ok, we have neural network architecture but what about the training data ? 
 This is another difficulty which can be handled by the unlabeled data remixing pipeline.
-We start with another classifier, which can find the parts of music, which do not contain the specific instruments, for example drums.
+
+We start with another classifier, which can find the parts of music, 
+which do not contain the specific instruments, for example drums.
 Then, we mix it with well known drums signal, and separate the tracks
 using the model. 
 
