@@ -7,7 +7,7 @@ layout: post
 guid: 'https://qooba.net/?p=639'
 permalink: /2021/07/04/tinyml-with-arduino/
 categories:
-    - 'No classified'
+    - MLOps
 tags:
     - Arduino
     - 'Machine learning'

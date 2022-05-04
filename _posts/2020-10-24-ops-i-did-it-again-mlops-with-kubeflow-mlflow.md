@@ -7,7 +7,7 @@ layout: post
 guid: 'https://qooba.net/?p=500'
 permalink: /2020/10/24/ops-i-did-it-again-mlops-with-kubeflow-mlflow/
 categories:
-    - 'No classified'
+    - MLOps
 tags:
     - ArgoCD
     - Kubeflow

@@ -7,14 +7,14 @@ layout: post
 guid: 'https://qooba.net/?p=732'
 permalink: /2021/11/12/distributed-feature-store-with-feast-and-dask/
 categories:
-    - 'No classified'
+    - Feast
+    - MLOps
+    - 'feature store'
 tags:
     - Dask
     - Feast
+    - MLOps
     - 'feature store'
-    - 'Machine learning'
-    - scikit-learn
-    - sklearn
 ---
 
 <img src="{{ site.relative_url }}assets/images/2021/11/soap-bubbles-2417436_1280.jpg" alt="bubbles" width="900" />

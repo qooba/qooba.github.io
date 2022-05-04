@@ -7,11 +7,12 @@ layout: post
 guid: 'https://qooba.net/?p=633'
 permalink: /2021/05/22/feast-with-ai-feed-your-mlflow-models-with-feature-store/
 categories:
-    - 'No classified'
+    - Feast
+    - MLOps
+    - 'feature store'
 tags:
     - Feast
-    - 'Machine learning'
-    - MLflow
+    - 'feature store'
     - MLOps
 ---
 
