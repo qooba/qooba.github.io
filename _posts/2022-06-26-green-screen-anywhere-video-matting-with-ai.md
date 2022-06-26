@@ -1,7 +1,7 @@
 ---
 id: 734
 title: 'Green Screen anywhere ? … sure, video matting with AI.'
-date: '2022-06-26T21:00:00'
+date: '2022-06-26T11:00:00'
 author: qooba
 layout: post
 guid: 'https://blog.qooba.net/?p=734'
