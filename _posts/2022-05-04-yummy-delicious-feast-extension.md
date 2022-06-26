@@ -26,7 +26,7 @@ Before you will continue reading please watch short introduction:
     <iframe src="https://www.youtube.com/embed/YinQxF4Gx54" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Last time I showed the [Feast integration with the Dask]({{ site.relative_url }}distributed-feature-store-with-feast-and-dask/) 
+Last time I showed the [Feast integration with the Dask]({{ site.relative_url }}2021/11/12/distributed-feature-store-with-feast-and-dask/) 
 framework which helps to distribute ML solutions across the cluster
 but doesn't solve other problems.
 Currently in Feast we have a warehouse based approach where Feast builds
