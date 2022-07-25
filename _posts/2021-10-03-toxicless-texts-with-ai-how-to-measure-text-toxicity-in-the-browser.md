@@ -29,7 +29,8 @@ Before you will continue reading please watch short introduction:
 </div>
 
 Hate, rude and toxic comments are common problem in the internet which affects many people. 
-Today, we will prepare neural network, which detects comments toxicity, 
+Today, we will prepare neural network, 
+which detects comments toxicity, 
 directly in the browser. 
 The goal is to create solution which will detect toxicity in the realtime and warn the user during writing, 
 which can discourage from writing toxic comments.
@@ -69,14 +70,15 @@ for the web browser, and web assembly. 
 
 <img src="{{ site.relative_url }}assets/images/2021/10/AIToxicity5_1.jpg" alt="tensorflow lite" width="900" />
 
-Now, let's prepare the non-toxic forum web application, where we can write the comments.
+Now, let's prepare the non-toxic forum web application, 
+where we can write the comments.
 When we write non-toxic comments, the model won't block it.
 
 On the other hand, the toxic comments will be blocked, 
 and the user warned.
 
-Of course, this is only client side validation, which can discourage users, from writing
-toxic comments.
+Of course, this is only client side validation, which can discourage users, 
+from writing toxic comments.
 
 <img src="{{ site.relative_url }}assets/images/2021/10/TextToxicity.gif" alt="web application" width="900" />
 
