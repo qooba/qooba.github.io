@@ -1,6 +1,6 @@
 ---
 id: 735
-title: 'Real-time ingested historical feature store with Iceberg, Feast and Yummy extension.'
+title: 'Real-time ingested historical feature store with Iceberg, Feast and Yummy.'
 date: '2022-07-25T11:00:00'
 author: qooba
 layout: post
