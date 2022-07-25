@@ -314,7 +314,7 @@ minio_console.jpeg
  
 Now we are ready to fetch historical features, using feast and yummy. 
 
-To use Yummy with the Icberg you need to install it:
+To use Yummy with the Iceberg you need to install it:
 ```
 pip install yummy
 ```
