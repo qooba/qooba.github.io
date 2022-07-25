@@ -165,9 +165,10 @@ pyspark \
 ```
 
 Now open the browser url: 
-[http://localhost:8887/notebooks/notebooks/example.ipynb](http://localhost:8887/notebooks/notebooks/example.ipynb)
+[http://localhost:8887/tree/notebooks](http://localhost:8887/tree/notebooks)
 
-All below commands are already in the notebooks but I will explain all of them.
+All below commands are already in the `example.ipynb`
+notebook but I will explain all of them.
 
 
 Kafka Connect, will publish database changes to the kafka, thus we also need to create appropriate topics, 
