@@ -59,6 +59,7 @@ as a ratio of number of edges running from first to second node,
 and the degree of the first node.
 The training phase is iterative multiplication of the embeddings matrix 
 and the transition matrix followed by L2 normalization of the embeddings rows. 
+
 Finally we get embedding matrix for the defined number of iterations.
 
 <img src="{{ site.relative_url }}assets/images/2022/09/YummyEmbeddings04_3.jpg" alt="theory" width="900" />
