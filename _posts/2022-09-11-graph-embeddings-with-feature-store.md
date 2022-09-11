@@ -67,7 +67,7 @@ Moreover, to be able to simply build a solution, I have extended the project,
 with possibility of reading and writing to S3 store, and Apache Parquet format usage, 
 which significantly reduce embedding size.
 
-<img src="{{ site.relative_url }}assets/images/2022/09/YummyEmbeddings05.01.jpeg" alt="theory" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/09/YummyEmbeddings05.01.jpeg" alt="theory" width="400" />
 
 Additionally, I have wrapped the rust code, with the python bindings, 
 thus we can simply install it and use it as a python package.
