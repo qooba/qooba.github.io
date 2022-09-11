@@ -27,7 +27,7 @@ use graph embeddings with feature store.
 Before you will continue reading please watch short introduction: 
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/watch?v=o_6Ov-Isr6c" frameborder="0" allowfullscreen></iframe>
+    <iframe src=""https://www.youtube.com/embed/o_6Ov-Isr6c" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Graphs are structures, which contain sets of entity nodes and edges, 
