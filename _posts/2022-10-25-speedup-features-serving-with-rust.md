@@ -178,7 +178,7 @@ feast serve --host "0.0.0.0" --port 6566 --no-access-log --no-feature-log --go
 ```
 
 Thus I assume that go implementation of the feature server will be used. 
-In this part I have used the official feastdev/feature-server:0.26.0 Feast docker image. 
+In this part I have used the official `feastdev/feature-server:0.26.0` Feast docker image. 
 
 Again I will fetch a single entity with fifty features using feature service. 
 For 10 requests per second the p99 response time is 92 ms.
