@@ -38,11 +38,11 @@ For this process the data fetch latency is important but not critical.
 
 On the other hand when we serve the model features, fetching latency is crucial and determines prediction time. 
 
-<img src="{{ site.relative_url }}assets/images/2022/09/YummyServe.01.jpeg" alt="feature store" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/10/YummyServe.01.jpeg" alt="feature store" width="900" />
 
 That’s why we use very fast online stores like Redis or DynamoDb. 
 
-<img src="{{ site.relative_url }}assets/images/2022/09/YummyServe.02.jpeg" alt="stores" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/10/YummyServe.02.jpeg" alt="stores" width="900" />
 
 The question which appears at this point is shall we call online store directly or use feature server ?
 
@@ -51,7 +51,7 @@ we don't want to add feature store dependencies to the models.
 Thus we abstract an online store with a feature server which serves features
 using for example REST api. 
 
-<img src="{{ site.relative_url }}assets/images/2022/09/YummyServe.04.jpeg" alt="architecture" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/10/YummyServe.04.jpeg" alt="architecture" width="900" />
 
 On the other hand latency due to additional layer should be minimized. 
 
@@ -59,7 +59,7 @@ Using Feast, we can manage features lifecycle
 and we can serve features using built-in features server 
 implemented in: python, java or go. 
 
-<img src="{{ site.relative_url }}assets/images/2022/09/YummyServe.05.jpeg" alt="assumptions" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/10/YummyServe.05.jpeg" alt="assumptions" width="900" />
 
 According to the [provided benchmark](https://feast.dev/blog/feast-benchmarks/) Feast feature server is very fast. 
 But can we go faster with the smaller number of computing resources ?
@@ -104,7 +104,7 @@ sixteen feature store server instances I will perform
 it with a single instance to simulate behavior 
 on the smaller number of resources. 
 
-<img src="{{ site.relative_url }}assets/images/2022/09/YummyServe.07.jpeg" alt="embeddings" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/10/YummyServe.07.jpeg" alt="embeddings" width="900" />
 
 The whole benchmark contains multiple scenarios like 
 changing number of entities, number of features or increasing
@@ -155,7 +155,7 @@ To run Rust feature server benchmark we will run:
 For Rust implementation `p99` response times are stable and less 
 than 4 ms going from 10 requests per seconds to 100 requests per second.
 
-<img src="{{ site.relative_url }}assets/images/2022/09/YummyBenchmark.png" alt="yummy benchmark results" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/10/YummyBenchmark.png" alt="yummy benchmark results" width="900" />
 
 For Feast following [documentation](https://docs.feast.dev/reference/feature-servers/go-feature-server) 
 I have set `go_feature_retrieval` to `True` 
@@ -188,7 +188,7 @@ For 10 requests per second the p99 response time is 92 ms.
 Unfortunately for 20 requests per seconds and above the p99 response 
 time is above 5s which exceeds our timeout value.  
 
-<img src="{{ site.relative_url }}assets/images/2022/09/FeastBenchmark.png" alt="feast benchmark results" width="900" />
+<img src="{{ site.relative_url }}assets/images/2022/10/FeastBenchmark.png" alt="feast benchmark results" width="900" />
 
 Additionally during Feast benchmark run I have noticed increasing 
 memory allocation which can be caused by the memory leak. 
