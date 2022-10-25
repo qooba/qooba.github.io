@@ -104,8 +104,6 @@ sixteen feature store server instances I will perform
 it with a single instance to simulate behavior 
 on the smaller number of resources. 
 
-<img src="{{ site.relative_url }}assets/images/2022/10/YummyServe.07.jpeg" alt="embeddings" width="900" />
-
 The whole benchmark contains multiple scenarios like 
 changing number of entities, number of features or increasing
 number of requests per second.
