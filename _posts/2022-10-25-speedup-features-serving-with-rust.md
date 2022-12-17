@@ -20,7 +20,7 @@ tags:
 
 <img src="{{ site.relative_url }}assets/images/2022/10/snail-5352510_640.jpg" alt="slime" width="900" />
 
-In this video I will introduce Yummy feature server implemented in Rust. 
+In this article I will introduce Yummy feature server implemented in Rust. 
 The feature server is fully compatible with Feast implementation. 
 Additionally benchmark results will be presented.
 
