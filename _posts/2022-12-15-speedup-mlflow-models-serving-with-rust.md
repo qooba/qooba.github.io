@@ -34,7 +34,7 @@ The Mlflow is opensource platform which covers end to end
 machine learning lifecycle 
 
 Including: Tracking experiments, Organizing code into reusable projects, 
-Models versioning And finally models deployment.
+Models versioning and finally models deployment.
 
 <img src="{{ site.relative_url }}assets/images/2022/12/YummyMLflow.02.jpeg" alt="mlops circle" width="900" />
 
