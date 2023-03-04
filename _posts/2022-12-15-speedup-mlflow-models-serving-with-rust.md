@@ -1,5 +1,5 @@
 ---
-id: 737
+id: 738
 title: 'Improve the performance of MLflow models with Rust'
 date: '2022-12-15T11:00:00'
 author: qooba
