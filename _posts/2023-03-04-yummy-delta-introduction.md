@@ -1,6 +1,6 @@
 ---
 id: 739
-title: ''
+title: 'Discover a Delicious Way to Use Delta Lake! Yummy Delta - #1 Introduction'
 date: '2023-03-04T11:00:00'
 author: qooba
 layout: post
