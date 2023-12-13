@@ -4,7 +4,7 @@ title: 'Tiny LLama: Compact LLM with WebAssembly'
 date: '2023-12-13T08:00:00'
 author: qooba
 layout: post
-guid: 'https://blog.qooba.net/?p=743'
+guid: 'https://blog.qooba.net/?p=744'
 permalink: /2023/12/13/tinyllama-compact-llm-with-webassembly/
 categories:
     - tinyllama
