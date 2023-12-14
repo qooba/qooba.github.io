@@ -141,5 +141,3 @@ I have shared several converted models on [HuggingFace](https://huggingface.co/o
 Model can be simply used on web application. 
 Example typescript code is available here: [https://github.com/onceuponai-dev/stories-thumbellama](https://github.com/onceuponai-dev/stories-thumbellama)
 You can also quickly test model on: [https://stories.onceuponai.dev/stories-thumbellama/](https://stories.onceuponai.dev/stories-thumbellama/)
-
-
