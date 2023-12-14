@@ -34,7 +34,7 @@ September and is planned to span just 90 days.
 Before you will continue reading please watch short introduction: 
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/RDhXRGfeCwk" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Cex6d4ZnmhY" frameborder="0" allowfullscreen></iframe>
 </div>
 
 The compactness of Tiny LLama is its standout feature. 
