@@ -30,7 +30,7 @@ In the rapidly evolving area of data science and natural language processing (NL
 the ability to intelligently understand and process textual information is crucial.
 In this article I will show how to create a semantic search aplication 
 using the [Candle ML](https://github.com/huggingface/candle) framework written in Rust, 
-coupled with the prowess of the [E5 model](https://huggingface.co/intfloat/e5-small-v2) for embedding generation.
+coupled with the [E5 model](https://huggingface.co/intfloat/e5-small-v2) for embedding generation.
 
 Before you will continue reading please watch short introduction: 
 
@@ -53,7 +53,7 @@ data sources like: Reddit (post, comment), Stackexchange (question, upvoted answ
 English Wikipedia (entity name + section title, passage), Scientific papers (title, abstract), Common Crawl (title, passage), and others. 
 
 To run the E5 model I will use the [Candle ML](https://github.com/huggingface/candle) framework written in Rust.
-Candle supports a wide range of ML models including whisper, LLama2, Mistral, Stable Diffusion and others.
+Candle supports a wide range of ML models including: Whisper, LLama2, Mistral, Stable Diffusion and others.
 Moreover we can simply compile and use Candle library inside WebAssembly to calculate 
 text embeddings.
 
@@ -64,8 +64,8 @@ Vue web application.
 
 <img src="{{ site.relative_url }}assets/images/2023/12/TextTransmutation08.jpg" alt="webapp" width="900" />
 
-The rust code is based on the candle Web Assembly example and expose Model struct which 
-loads the model and calculates embeddings.
+The rust code is based on the candle Web Assembly example and expose model struct which 
+loads the E5 model and calculates embeddings.
 Compiled rust struct is used in the Vue typescript webworker. 
 
 The web application reads example recipes and calculates embeddings for each. 
@@ -74,9 +74,9 @@ When user inputs a text application calculates embedding and search the recipe
 from the list that matches the best, the cosine similarity is used for this purpose.
 
 Cosine similarity measures the cosine of the angle between two vectors, 
-offering a way to gauge how similar two texts are in their semantic content.
+offering a way to judge how similar two texts are in their semantic content.
 
-<img src="{{ site.relative_url }}assets/images/2023/12/TextTransmutation_cosine" alt="webapp" width="900" />
+<img src="{{ site.relative_url }}assets/images/2023/12/TextTransmutation_cosine.png" alt="cosine similarity" width="900" />
 
 For handling larger datasets, it becomes impractical to compute cosine similarity for each phrase individually due to scalability issues. 
 In such cases, utilizing a vector database is a more efficient approach.
